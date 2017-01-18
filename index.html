@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>empty</title>
+    <style>
+        body { padding: 0px; margin: 0px; background: #222; }
+        #container { width:100%; overflow: auto; padding: 10px; box-sizing: border-box; line-height: 20px; font-size: 15px; font-family: sans-serif; color: #0b2; }
+        #container p { width: 100%; padding: 0; margin: 0; }
+        #container p .right { float: right; color: #0b2; }
+        #container p .picked { color: #eee; }
+        #container p a { color:#eee; text-decoration: underline; cursor: pointer; }
+        #container p span { color:#ee6; }
+        #container p input[type="text"] { background: none; font-size: 15px; color:#eee; border: none; border-bottom: 1px solid #666; padding: 0px; }
+        #container p input[type="text"]:focus { outline: none; }
+    </style>
+    <script src="data.js"></script>
+    <script src="events.js"></script>
+    <script src="items.js"></script>
+    <script src="game.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var new_game = new Game({ element:'#container' });
+    </script>
+</body>
+</html>
